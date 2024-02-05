@@ -1,0 +1,14 @@
+.reasons {
+  padding-top: 150px;
+  min-height: 310px;
+  &__title {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  &__wrapper {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

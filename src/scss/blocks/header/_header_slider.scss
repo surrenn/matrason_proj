@@ -1,0 +1,60 @@
+.header-slider {
+  height: 845px;
+  &__screen {
+    position: relative;
+    padding-top: 225px;
+    padding-left: 145px;
+    border-radius: 60px;
+    height: 100%;
+    background: url("../img/header_promo/imgLittleGirl.jpeg") center
+      center/cover no-repeat;
+  }
+
+  &__title {
+    font-size: 74px;
+    line-height: 101px;
+    color: #fff;
+  }
+  &__subtitle {
+    width: 541px;
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 49px;
+    color: #fff;
+    text-align: left;
+  }
+
+  &__btn {
+    margin-top: 30px;
+  }
+
+  &__arrows-block {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__left-arrow,
+  &__right-arrow {
+    width: 108px;
+    height: 108px;
+    cursor: pointer;
+    svg {
+      stroke: #fff;
+    }
+    &:hover {
+      svg {
+        stroke: $main_color;
+      }
+    }
+    &:active {
+      svg {
+        stroke: $main_color-hover;
+      }
+    }
+  }
+}

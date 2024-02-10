@@ -1,0 +1,51 @@
+.dropdown {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  display: none;
+  background-color: #fff;
+  border-radius: 40px;
+  z-index: 3;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 306px;
+  height: 368px;
+  padding: 64px 70px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &_active {
+    display: block;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 18px;
+    &_selected {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 12px;
+        background: url("../icons/dropdown/checkMark.png");
+        left: 140px;
+        top: 5px;
+      }
+    }
+  }
+
+  &__city {
+    width: 230px;
+    height: 123px;
+    padding: 26px 0 33px 35px;
+    border-radius: 20px;
+    ul li {
+      margin-bottom: 14px;
+      width: 160px;
+    }
+  }
+}

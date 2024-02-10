@@ -1,3 +1,31 @@
 .header {
   padding-top: 25px;
+  &__desc {
+    display: block;
+  }
+  &__mob {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__desk {
+      display: none;
+    }
+    &__mob {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__desk {
+      display: none;
+    }
+    &__mob {
+      display: block;
+    }
+  }
 }

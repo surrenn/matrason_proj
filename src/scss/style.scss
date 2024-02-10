@@ -1,7 +1,8 @@
 @import "libs/bootstrap-reboot.min";
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap");
 
 @import "base/variables";
+@import "base/mixins";
 
 * {
   font-family: "Manrope", sans-serif;
@@ -21,7 +22,8 @@ a {
 }
 
 .container {
-  width: 1710px;
+  max-width: 1740px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -35,4 +37,9 @@ a {
 @import "blocks/reasons/reasons";
 @import "blocks/reasons/reasons_item";
 @import "blocks/picker/picker";
-@import "blocks/picker/picker-block";
+@import "blocks/picker/picker_block";
+@import "blocks/dropdowns";
+@import "blocks/mobile/header_mobile";
+@import "blocks/main";
+@import "blocks/mobile/mobile-menu";
+@import "blocks/mobile/mobile_dropdown";

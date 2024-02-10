@@ -1,0 +1,15 @@
+@mixin circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 18px;
+  right: -12px;
+  top: -6px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: $main_color;
+  color: #fff;
+}

@@ -1,4 +1,39 @@
 .header-promo {
-  height: 845px;
+  min-height: 845px;
   padding-top: 77px;
+  &__btn {
+    display: none;
+    height: 60px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 58px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-promo {
+    min-height: 450px;
+    padding-top: 50px;
+
+    &__btn {
+      display: inline-block;
+      font-size: 25px;
+      height: 80px;
+      line-height: 78px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .header-promo {
+    min-height: 227px;
+    padding-top: 30px;
+
+    &__btn {
+      height: 60px;
+      font-size: 15px;
+      line-height: 58px;
+    }
+  }
 }

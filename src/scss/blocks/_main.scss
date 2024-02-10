@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+  .main {
+    display: grid;
+    grid-template-areas:
+      "picker"
+      "reasons";
+
+    .picker {
+      grid-area: picker;
+    }
+
+    .reasons {
+      grid-area: reasons;
+    }
+  }
+}

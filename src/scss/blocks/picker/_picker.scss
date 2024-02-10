@@ -2,3 +2,16 @@
   padding-top: 150px;
   min-height: 737px;
 }
+
+@media (max-width: 992px) {
+  .picker {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 580px) {
+  .picker {
+    padding-top: 30px;
+    min-height: 400px;
+  }
+}

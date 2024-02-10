@@ -1,12 +1,22 @@
 .header-catalog {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 45px;
-  li {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
     list-style-type: none;
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-catalog {
+    &__item {
+      font-size: 18px;
+    }
   }
 }
